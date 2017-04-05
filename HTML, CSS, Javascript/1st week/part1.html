@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Hugo García's Dating Site
+    </title>
+
+  </head>
+  
+  <body>
+    <h1>
+      Please enter your details for our dating website!
+    </h1>
+    <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get" enctype="multipart/form-data">
+      <fieldset>
+        <legend>
+          Your Face
+        </legend>
+        <label for="fileToUpload">Your image: </label><input type="file" name="fileToUpload" id="fileToUpload" required><br><br>
+        <label for="preview">Image preview: </label><img src="" id="preview"  width="200" name="preview">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>
+          Your General Details
+        </legend>
+        <label for="name">Name: </label>
+          <input type="text" name="name" id="name" required><br><br>
+        <label for="gender">Gender: </label>
+          <input type="radio" value="Male" name="gender" id="gender">
+          <label for="male" class="radiocheck">Male</label>
+          <input type="radio" value="Female" name="gender" id="gender">
+          <label for="male" class="radiocheck">Female</label><br><br>
+        <label for="age">Age: </label>
+          <input type="number" name="age" id="age" required><br><br>
+          <label for="dateOfBirth">Date of birth: </label>
+          <input type="date" id="dateOfBirth" name="dateOfBirth"><br><br>
+          <label for="color">Favorite color: </label>
+          <input type="color" name="color" id="color"><br><br>
+          <label for="country">Which country: </label>
+          <select>
+            <option value="No selection" name="country" id="country">No selection</option>
+            <option value="Mexico" name="country" id="country">Mexico</option>
+            <option value="Canada" name="country" id="country">Canada</option>
+            <option value="USA" name="country" id="country">USA</option>
+            <option value="Argentina" name="country" id="country">Argentina</option>
+            <option value="Spain" name="country" id="country">Spain</option>
+          </select>
+      </fieldset><br>
+      <fieldset>
+        <legend>
+          Your Indicators
+        </legend>
+        <label for="height">Height: </label><span class="range range-low">Short</span><input type="range" min="0" max="100" name="height" id="height"><span class="range range-high">Tall</span><br><br>
+        <label for="salary">Salary: </label><span class="range range-low">Poor</span><input type="range" min="0" max="100" name="salary" id="salary"><span class="range range-high">Rich</span>
+      </fieldset><br>
+      <fieldset>
+        <legend>
+          Your Contact Information
+        </legend>
+        <label for="email">Email: </label><input type="email" required id="email" name="email"><br><br>
+        <label for="mobile">Mobile: </label><input type="tel" id="mobile" name="mobile"><br><br>
+        <label for="address">Address: </label><textarea name="address" id="address"></textarea><br><br>
+        <label for="method" >Method to contact you: </label>
+            <input type="checkbox" id="method" name="method"><label for="method" class="radiocheck">Email</label>
+            <input type="checkbox" id="method" name="method"><label for="method" class="radiocheck">Whatsapp</label>
+            <input type="checkbox" id="method" name="method"><label for="method" class="radiocheck">In-app chat</label>
+      </fieldset><br>
+      <input type="submit" name="submit">
+    </form>
+    
+  </body>
+</html>
