@@ -1,0 +1,20 @@
+[main] fibonacci_huge 1000 (0) exception: trapped!
+[main] fibonacci_huge 1000 (0) exception: code 0xC0000005 at 0x4012F0
+[main] fibonacci_huge 1000 (0) exception: ax 0x2AF8 bx 0x2718 cx 0x0 dx 0x0
+[main] fibonacci_huge 1000 (0) exception: si 0x278 di 0x0 bp 0x246FED0 sp 0x246B0B4
+[main] fibonacci_huge 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] fibonacci_huge 1000 (0) stack: Stack trace:
+[main] fibonacci_huge 1000 (0) stack: frame 0: sp = 0x246AAC0, pc = 0x6100A2C3
+[main] fibonacci_huge 1000 (0) stack: frame 1: sp = 0x246AAFC, pc = 0x77632D72
+[main] fibonacci_huge 1000 (0) stack: frame 2: sp = 0x246AB20, pc = 0x77632D44
+[main] fibonacci_huge 1000 (0) stack: frame 3: sp = 0x246ABEC, pc = 0x776208EF
+[main] fibonacci_huge 1000 (0) stack: frame 4: sp = 0x246FED0, pc = 0x40143A
+[main] fibonacci_huge 1000 (0) stack: frame 5: sp = 0x246FEFC, pc = 0x61004402
+[main] fibonacci_huge 1000 (1) stack: frame 6: sp = 0x246FF48, pc = 0x61004420
+[main] fibonacci_huge 1000 (0) stack: frame 7: sp = 0x246FF54, pc = 0x41383E
+[main] fibonacci_huge 1000 (0) stack: frame 8: sp = 0x246FF64, pc = 0x40103A
+[main] fibonacci_huge 1000 (0) stack: frame 9: sp = 0x246FF80, pc = 0x76E062C4
+[main] fibonacci_huge 1000 (0) stack: frame 10: sp = 0x246FF94, pc = 0x77610FD9
+[main] fibonacci_huge 1000 (0) stack: frame 11: sp = 0x246FFDC, pc = 0x77610FA4
+[main] fibonacci_huge 1000 (0) stack: frame 12: sp = 0x246FFEC, pc = 0x0
+[main] fibonacci_huge 1000 (0) stack: End of stack trace
