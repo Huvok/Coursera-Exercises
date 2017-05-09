@@ -1,0 +1,18 @@
+<p>Powered By Food2Fork.com</p>
+
+<table>
+  <tr>
+    <th>Thumbnail</th>
+    <th>Title</th>
+    <th>Social rank</th>
+  </tr>
+  <% @recipes.each do |recipe| %>
+    <tr>
+      <td><%= link_to image_tag(recipe["image_url"],
+                                :width => 100,
+                                :height => 100), recipe["source_url"] %></td>
+      <td><%= link_to (sanitize recipe["title"]), recipe["source_url"] %></td>
+      <td><%= recipe["social_rank"] %></td>
+    </tr>
+  <% end %>
+</table>
